@@ -149,6 +149,6 @@
   </footer>
 </body>
     <script>
-        document.getElementById("count").innerHTML = '<br>(当日使用次数: '+ getCount() + ')';
+        document.getElementById("count").innerHTML = '<br>(当日使用次数: '+ getCount() + ')' + (getCount() > 80000 ? ', 已使用超过80%可用额度, 已暂停使用!':'');
     </script>
 </html>
